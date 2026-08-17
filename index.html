@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV MAHAMOUDOU Houldia - Physique & Mathématiques | BTS Assurance</title>
+  <meta name="description"
+    content="CV Professionnel de MAHAMOUDOU Houldia - Baccalauréat Général Spécialités Mathématiques & Physique-Chimie, Étudiante en BTS Assurance. Design Skeuomorphisme Scientifique & Espace.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Self-Contained Embedded Skeuomorphic & Space Physics Styles -->
+  <style>
+    /* ==========================================================================
+       SKEUOMORPHIC SPACE & PHYSICS CV - ALL-IN-ONE STYLES
+       ========================================================================== */
+
+    :root {
+      /* Space Cosmos Palette */
+      --bg-cosmos-dark: #070a12;
+      --bg-cosmos-gradient: radial-gradient(circle at 50% 20%, #1e1b4b 0%, #0f172a 50%, #05070d 100%);
+      --accent-cyan: #0284c7;
+      --accent-cyan-glow: rgba(14, 165, 233, 0.4);
+      --accent-violet: #7c3aed;
+      --accent-amber: #d97706;
+      --accent-emerald: #059669;
+
+      /* Skeuomorphic Paper & Metal Materials */
+      --paper-bg: #fbf9f5;
+      --paper-grid-line: rgba(59, 130, 246, 0.07);
+      --paper-grid-major: rgba(59, 130, 246, 0.15);
+      --ink-primary: #0f172a;
+      --ink-secondary: #334155;
+      --ink-muted: #64748b;
+
+      /* Leather & Brass Clip Tokens */
+      --clip-leather-bg: linear-gradient(180deg, #2a1f1b 0%, #1a1210 100%);
+      --brass-metal-grad: linear-gradient(135deg, #ffe57f 0%, #d4af37 40%, #aa820a 70%, #684f00 100%);
+      --metal-screw-grad: radial-gradient(circle at 35% 35%, #ffffff 0%, #cbd5e1 40%, #64748b 80%, #334155 100%);
+
+      /* Skeuomorphic Shadows & Lighting */
+      --shadow-paper: 0 30px 70px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.1);
+      --shadow-inset-bevel: inset 0 2px 3px rgba(255, 255, 255, 0.8), inset 0 -2px 4px rgba(0, 0, 0, 0.15);
+      --shadow-card-skeuo: 0 4px 12px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      --shadow-btn-skeuo: 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+      /* Typography */
+      --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-mono: 'Fira Code', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-cosmos-dark);
+    }
+
+    body {
+      font-family: var(--font-main);
+      color: var(--ink-primary);
+      background: var(--bg-cosmos-gradient);
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    /* Interactive Space Physics Canvas */
+    #space-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .cosmos-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.2) 0%, rgba(7, 10, 18, 0.7) 100%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* Top Action Bar (Non-Printable) */
+    .top-action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, rgba(7, 10, 18, 0.85) 100%);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.75rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .control-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .atom-icon-glow {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #38bdf8 0%, #0284c7 60%, #0369a1 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.25rem;
+      box-shadow: 0 0 15px var(--accent-cyan-glow), inset 0 2px 4px rgba(255, 255, 255, 0.6);
+    }
+
+    .fa-spin-slow {
+      animation: fa-spin 12s infinite linear;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      color: #f8fafc;
+      text-transform: uppercase;
+    }
+
+    .brand-sub {
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 0.85rem;
+    }
+
+    /* Skeuomorphic 3D Buttons */
+    .skeuo-btn {
+      font-family: var(--font-main);
+      font-weight: 600;
+      font-size: 0.88rem;
+      padding: 0.6rem 1.25rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: var(--shadow-btn-skeuo);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skeuo-btn:active {
+      transform: translateY(2px);
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .primary-btn {
+      background: linear-gradient(180deg, #0284c7 0%, #0369a1 100%);
+      color: #ffffff;
+      border-color: #38bdf8;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .primary-btn:hover {
+      background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.4), var(--shadow-btn-skeuo);
+    }
+
+    .secondary-btn {
+      background: linear-gradient(180deg, #334155 0%, #1e293b 100%);
+      color: #e2e8f0;
+      border-color: #475569;
+    }
+
+    .secondary-btn:hover {
+      background: linear-gradient(180deg, #475569 0%, #334155 100%);
+    }
+
+    .accent-btn {
+      background: linear-gradient(180deg, #d97706 0%, #b45309 100%);
+      color: #ffffff;
+      border-color: #fbbf24;
+    }
+
+    .accent-btn:hover {
+      background: linear-gradient(180deg, #f59e0b 0%, #d97706 100%);
+      box-shadow: 0 0 15px rgba(245, 158, 11, 0.4), var(--shadow-btn-skeuo);
+    }
+
+    /* CV Main Container */
+    .cv-wrapper {
+      position: relative;
+      z-index: 10;
+      max-width: 940px;
+      margin: 1.25rem auto 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Leather & Brass Clipboard Clip */
+    .clipboard-top-clip {
+      position: relative;
+      width: 76%;
+      margin: 0 auto -28px auto;
+      height: 58px;
+      background: var(--clip-leather-bg);
+      border-radius: 12px 12px 0 0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      z-index: 15;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+    }
+
+    .metal-rivet {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--metal-screw-grad);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+      position: relative;
+    }
+
+    .metal-rivet::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      right: 20%;
+      height: 2px;
+      background: #334155;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    .brass-plate {
+      background: var(--brass-metal-grad);
+      border-radius: 6px;
+      padding: 0.35rem 1.25rem;
+      border: 1px solid #ffe57f;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+      text-align: center;
+    }
+
+    .embossed-title {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      color: #3d2c00;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    }
+
+    .physics-formula-header {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: #5c4300;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+
+    /* Printable & Exportable CV Document Sheet (Compact 1-Page A4) */
+    .skeuo-paper-board {
+      position: relative;
+      background-color: var(--paper-bg);
+      border-radius: 12px;
+      padding: 1.6rem 2rem 1.25rem 2rem;
+      box-shadow: var(--shadow-paper);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      overflow: hidden;
+      min-height: auto;
+    }
+
+    /* Paper Grid Texture */
+    .paper-grid-texture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image:
+        linear-gradient(var(--paper-grid-major) 1px, transparent 1px),
+        linear-gradient(90deg, var(--paper-grid-major) 1px, transparent 1px),
+        linear-gradient(var(--paper-grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--paper-grid-line) 1px, transparent 1px);
+      background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.85;
+    }
+
+    /* Watermark Physics Formulas */
+    .physics-watermark-math {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      font-family: var(--font-mono);
+      color: rgba(30, 58, 138, 0.035);
+      font-weight: 700;
+      user-select: none;
+    }
+
+    .math-eq {
+      position: absolute;
+    }
+
+    .eq-1 {
+      top: 12%;
+      right: 8%;
+      font-size: 3.5rem;
+      transform: rotate(-5deg);
+    }
+
+    .eq-2 {
+      bottom: 30%;
+      left: 5%;
+      font-size: 2.8rem;
+      transform: rotate(8deg);
+    }
+
+    .eq-3 {
+      top: 50%;
+      right: 10%;
+      font-size: 2.2rem;
+      transform: rotate(-12deg);
+    }
+
+    .eq-4 {
+      bottom: 10%;
+      right: 25%;
+      font-size: 2.5rem;
+      transform: rotate(4deg);
+    }
+
+    /* Decorative Brass Stamp Seal / Logo (Centered in Header) */
+    .skeuo-badge-stamp {
+      position: relative;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: var(--brass-metal-grad);
+      padding: 4px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+      z-index: 10;
+      transform: rotate(0deg);
+      flex-shrink: 0;
+      margin: 0 auto 0.4rem auto;
+      align-self: center;
+    }
+
+    .skeuo-badge-stamp .inner-ring {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px dashed #684f00;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #4a3b00;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .skeuo-badge-stamp i {
+      font-size: 1.3rem;
+      margin-bottom: 2px;
+      color: #3d2c00;
+    }
+
+    .skeuo-badge-stamp span {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+    }
+
+    .skeuo-badge-stamp small {
+      font-size: 0.52rem;
+      font-weight: 700;
+    }
+
+    /* --- Header Section (Grid Layout Prevents Overlapping) --- */
+    .cv-header {
+      position: relative;
+      z-index: 3;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid rgba(15, 23, 42, 0.1);
+      padding-bottom: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 245px;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .header-main-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .candidate-name {
+      font-family: var(--font-display);
+      font-size: 2.05rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--ink-primary);
+      line-height: 1.1;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+      margin-bottom: 0.25rem;
+    }
+
+    .candidate-title-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%);
+      color: #38bdf8;
+      padding: 0.35rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      margin-bottom: 0.75rem;
+      align-self: center;
+    }
+
+    .candidate-title-badge i {
+      color: #38bdf8;
+    }
+
+    .profile-summary {
+      font-size: 0.84rem;
+      color: var(--ink-secondary);
+      line-height: 1.48;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.75);
+      padding: 0.65rem 0.9rem;
+      border-radius: 8px;
+      border-top: 3px solid var(--accent-cyan);
+      border-left: none;
+      box-shadow: var(--shadow-card-skeuo);
+      text-align: left;
+    }
+
+    /* Contact Card Skeuomorphic Glass/Lens */
+    .contact-card-skeuo {
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 100%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(241, 245, 249, 0.9) 100%);
+      border-radius: 10px;
+      border: 1px solid rgba(203, 213, 225, 0.8);
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255, 255, 255, 1);
+      overflow: hidden;
+    }
+
+    .card-header-metal {
+      background: linear-gradient(180deg, #334155 0%, #1e293b 100%);
+      color: #f1f5f9;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 0.45rem 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .contact-list {
+      padding: 0.75rem 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .icon-lens {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #e0f2fe 0%, #bae6fd 60%, #0284c7 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0369a1;
+      font-size: 0.75rem;
+      box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.9), 0 2px 4px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-details .label {
+      font-size: 0.65rem;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .contact-details .valeur {
+      font-size: 0.78rem;
+      color: var(--ink-primary);
+      font-weight: 600;
+      word-break: break-all;
+    }
+
+    /* Layout Grid */
+    .cv-body-grid {
+      position: relative;
+      z-index: 3;
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 1.25rem;
+    }
+
+    /* Section Header Tape Styling */
+    .section-header-tape {
+      background: linear-gradient(90deg, #1e293b 0%, #334155 100%);
+      color: #ffffff;
+      padding: 0.35rem 0.8rem;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.6rem;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    .section-header-tape i {
+      color: #38bdf8;
+      font-size: 0.88rem;
+    }
+
+    .section-header-tape h2 {
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .section-header-tape.alt i {
+      color: #fbbf24;
+    }
+
+    .section-header-tape.space-theme {
+      background: linear-gradient(90deg, #4c1d95 0%, #6d28d9 100%);
+    }
+
+    .section-header-tape.space-theme i {
+      color: #c4b5fd;
+    }
+
+    /* Section Box Skeuomorphic */
+    .skeuo-section-box {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: 10px;
+      padding: 0.75rem 0.85rem;
+      margin-bottom: 0.85rem;
+      box-shadow: var(--shadow-card-skeuo);
+    }
+
+    /* Sidebar Components */
+    .skill-card {
+      margin-bottom: 0.45rem;
+    }
+
+    .skill-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-head {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .skill-head i {
+      color: var(--accent-cyan);
+      font-size: 0.82rem;
+    }
+
+    .skill-head h3 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--ink-primary);
+    }
+
+    .skill-card p {
+      font-size: 0.73rem;
+      color: var(--ink-secondary);
+      line-height: 1.35;
+      margin-bottom: 0.25rem;
+    }
+
+    .skill-bar-outer {
+      height: 5px;
+      background: #e2e8f0;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-bar-inner {
+      height: 100%;
+      background: linear-gradient(90deg, #0284c7 0%, #38bdf8 100%);
+      border-radius: 3px;
+      box-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+    }
+
+    /* Relational List */
+    .relational-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .relational-list li {
+      display: flex;
+      gap: 0.65rem;
+      font-size: 0.78rem;
+      color: var(--ink-secondary);
+      line-height: 1.4;
+    }
+
+    .bullet-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #fef3c7;
+      color: #d97706;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      flex-shrink: 0;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      margin-top: 1px;
+    }
+
+    .relational-list strong {
+      color: var(--ink-primary);
+      display: block;
+    }
+
+    /* Knowledge Matrix Tags (Horizontal 3 Columns) */
+    .horizontal-knowledge-tags {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .horizontal-knowledge-tags .k-tag {
+      font-size: 0.74rem;
+      font-weight: 600;
+      padding: 0.45rem 0.75rem;
+      background: rgba(255, 255, 255, 0.9);
+      color: #1e293b;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      box-shadow: var(--shadow-card-skeuo);
+      width: 100%;
+    }
+
+    .k-tag i {
+      color: var(--accent-violet);
+    }
+
+    /* Main Content Components */
+    .section-title-skeuo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.85rem;
+      border-bottom: 2px dashed rgba(148, 163, 184, 0.4);
+      padding-bottom: 0.35rem;
+    }
+
+    .title-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.88rem;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    .section-title-skeuo h2 {
+      font-family: var(--font-display);
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: var(--ink-primary);
+      letter-spacing: 0.5px;
+    }
+
+    /* Timeline Cards */
+    .timeline-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-card {
+      position: relative;
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 0.95rem 1.15rem;
+      box-shadow: var(--shadow-card-skeuo);
+      border-left: 4px solid var(--accent-cyan);
+    }
+
+    .timeline-card.active-card {
+      border-left-color: var(--accent-emerald);
+      background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+    }
+
+    .card-pin {
+      position: absolute;
+      top: 0.85rem;
+      right: 1rem;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--metal-screw-grad);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-year {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: #0284c7;
+      background: #e0f2fe;
+      padding: 0.1rem 0.45rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.3rem;
+    }
+
+    .timeline-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--ink-primary);
+      margin-bottom: 0.15rem;
+    }
+
+    .card-subtitle {
+      font-size: 0.76rem;
+      color: var(--ink-muted);
+      font-weight: 600;
+      margin-bottom: 0.45rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .specialties-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 0.55rem;
+    }
+
+    .s-badge {
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      background: #0f172a;
+      color: #38bdf8;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .developed-skills-box {
+      background: rgba(241, 245, 249, 0.7);
+      border-radius: 6px;
+      padding: 0.6rem 0.85rem;
+      font-size: 0.76rem;
+      margin-top: 0.4rem;
+    }
+
+    .developed-skills-box strong {
+      color: var(--ink-primary);
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+
+    .developed-skills-box ul {
+      padding-left: 1.1rem;
+      color: var(--ink-secondary);
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .developed-skills-box li {
+      margin-bottom: 0;
+      line-height: 1.45;
+    }
+
+    .cv-main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+
+    /* Experience Bullet List */
+    .exp-bullet-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 0.35rem;
+    }
+
+    .exp-bullet-list li {
+      font-size: 0.78rem;
+      color: var(--ink-secondary);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+      line-height: 1.45;
+    }
+
+    .exp-bullet-list i {
+      color: var(--accent-emerald);
+      font-size: 0.72rem;
+      margin-top: 3px;
+    }
+
+    /* Interests Section Full Width Horizontal */
+    .interests-section {
+      margin-top: 1rem;
+      position: relative;
+      z-index: 3;
+    }
+
+    .interests-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+    }
+
+    .interest-card {
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 0.65rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      box-shadow: var(--shadow-card-skeuo);
+      transition: transform 0.2s ease;
+    }
+
+    .interest-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .interest-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 5px;
+      background: #e0f2fe;
+      color: #0284c7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+    }
+
+    .interest-card h4 {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--ink-primary);
+    }
+
+    .interest-card p {
+      font-size: 0.68rem;
+      color: var(--ink-muted);
+      line-height: 1.25;
+    }
+
+    /* Footer Section */
+    .cv-footer {
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed rgba(15, 23, 42, 0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--ink-muted);
+    }
+
+    .footer-equation {
+      font-weight: 600;
+      color: var(--accent-cyan);
+    }
+
+    /* Responsive & Print Styles */
+    @media screen and (max-width: 860px) {
+      .top-action-bar {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+      }
+
+      .cv-wrapper {
+        margin-top: 1.5rem;
+      }
+
+      .clipboard-top-clip {
+        width: 90%;
+        font-size: 0.8rem;
+      }
+
+      .skeuo-paper-board {
+        padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+      }
+
+      .cv-header {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card-skeuo {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .cv-body-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .interests-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+
+      #space-canvas,
+      .cosmos-overlay,
+      .no-print,
+      .top-action-bar,
+      .clipboard-top-clip {
+        display: none !important;
+      }
+
+      .cv-wrapper {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .skeuo-paper-board {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        min-height: auto !important;
+      }
+
+      .paper-grid-texture {
+        opacity: 0.3 !important;
+      }
+
+      .contact-card-skeuo {
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+      }
+
+      .timeline-card,
+      .skeuo-section-box {
+        box-shadow: none !important;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Space Physics Interactive Canvas Background -->
+  <canvas id="space-canvas"></canvas>
+  <div class="cosmos-overlay"></div>
+
+  <!-- Main Viewport Container -->
+  <main class="cv-wrapper">
+
+    <!-- Skeuomorphic Leather & Brass Clipboard Clip -->
+    <div class="clipboard-top-clip">
+      <div class="metal-rivet left"></div>
+      <div class="brass-plate">
+        <div class="embossed-title">CV &bull; MAHAMOUD HOULDIA &bull; RAPPORT ESPACE-TEMPS & MATHS APPLIQUÉES</div>
+        <div class="physics-formula-header">
+          <i class="fa-solid fa-atom"></i> E = mc² &bull; P(A &cup; B) = P(A) + P(B) - P(A &cap; B)
+        </div>
+      </div>
+      <div class="metal-rivet right"></div>
+    </div>
+
+    <!-- Printable & Exportable CV Document Sheet -->
+    <article id="cv-document" class="skeuo-paper-board">
+
+      <!-- Math Grid Watermark Decor -->
+      <div class="paper-grid-texture"></div>
+      <div class="physics-watermark-math">
+        <span class="math-eq eq-1">E = mc²</span>
+        <span class="math-eq eq-2">F = dp / dt</span>
+        <span class="math-eq eq-3">&Delta;x &middot; &Delta;p &ge; &hbar;/2</span>
+        <span class="math-eq eq-4">&nabla; &times; B = &mu;₀ J</span>
+      </div>
+
+      <!-- Decorative Brass Stamp Seal / Logo -->
+      <div class="skeuo-badge-stamp" title="Profil Scientifique Homologué">
+        <div class="inner-ring">
+          <i class="fa-solid fa-award"></i>
+          <span>PROFIL</span>
+          <small>SCIENTIFIQUE</small>
+        </div>
+      </div>
+
+      <!-- CV HEADER SECTION (Grid Layout Prevents Overlap) -->
+      <header class="cv-header">
+        <div class="header-main-info">
+          <div class="candidate-title-badge">
+            <i class="fa-solid fa-microscope"></i>
+            <span>BTS ASSURANCE &bull; BACCALAURÉAT GÉNÉRAL (MATHS & PHYSIQUE-CHIMIE)</span>
+          </div>
+
+          <p class="profile-summary">
+            Lycéenne sérieuse et rigoureuse, titulaire du Baccalauréat Général spécialités 
+            <strong style="color:blue">en première</strong>: mathématiques, physique-chimie et HGGSP.
+             <strong style="color:blue">En terminale</strong>, j'ai gardé HGGSP et physique-chimie. 
+            <strong style="color:blue">Actuellement en BTS Assurance</strong>. Profil analytique, curieux et engagé, avec de solides bases
+            en sciences, en rédaction et en analyse de société. Dotée d’un excellent relationnel et d’un fort sens du
+            service, acquis lors de mon expérience en école maternelle.
+          </p>
+        </div>
+
+        <!-- Contact Card Skeuomorphic Glass/Lens (Properly Cell-Aligned) -->
+        <div class="contact-card-skeuo">
+          <div class="card-header-metal">
+            <i class="fa-solid fa-id-card"></i> COORDONNÉES & ACCÈS
+          </div>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="icon-lens"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-details">
+                <span class="label">Localisation</span>
+                <span class="valeur">Majicavo Lamir, Mayotte</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon-lens"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="contact-details">
+                <span class="label">Statut Actuel</span>
+                <span class="valeur">Étudiante BTS Assurance</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon-lens"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-details">
+                <span class="label">Contact Pro</span>
+                <span class="valeur">houldia.mahamoud@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon-lens"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-details">
+                <span class="label">Téléphone</span>
+                <span class="valeur">+269 364 93 61</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="cv-body-grid">
+
+        <!-- LEFT COLUMN: SKILLS & KNOWLEDGE BASE -->
+        <aside class="cv-sidebar">
+
+          <!-- COMPÉTENCES TECHNIQUES -->
+          <section class="skeuo-section-box">
+            <div class="section-header-tape">
+              <i class="fa-solid fa-square-root-variable"></i>
+              <h2>COMPÉTENCES TECHNIQUES</h2>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-head">
+                <i class="fa-solid fa-calculator"></i>
+                <h3>Analyse et rigueur</h3>
+              </div>
+              <p>Spécialité Mathématiques + Physique-Chimie = esprit logique, capacité à traiter des données complexes
+                et à résoudre des problèmes avec méthode.</p>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" style="width: 92%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-head">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Outils Bureautiques</h3>
+              </div>
+              <p>Pack Office : Word (rédaction structurée), Excel (tableaux & statistiques), PowerPoint (présentations
+                synthétiques).</p>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-head">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <h3>Compétences Rédactionnelles</h3>
+              </div>
+              <p>Synthèse rigoureuse, structuration d'arguments, aisance d'expression écrite et analyse de données grâce
+                à la spécialité HGGSP.</p>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" style="width: 90%;"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- COMPÉTENCES RELATIONNELLES -->
+          <section class="skeuo-section-box">
+            <div class="section-header-tape alt">
+              <i class="fa-solid fa-people-roof"></i>
+              <h2>COMPÉTENCES RELATIONNELLES</h2>
+            </div>
+
+            <ul class="relational-list">
+              <li>
+                <div class="bullet-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                <div>
+                  <strong>Sens du contact et de l’écoute :</strong>
+                  <span>Accompagnement bienveillant et communication fluide issus du travail auprès d’enfants en école
+                    maternelle.</span>
+                </div>
+              </li>
+              <li>
+                <div class="bullet-icon"><i class="fa-solid fa-hand-holding-hand"></i></div>
+                <div>
+                  <strong>Pédagogie et patience :</strong>
+                  <span>Capacité d’explication claire, écoute active, médiation et gestion sereine de groupe.</span>
+                </div>
+              </li>
+              <li>
+                <div class="bullet-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                <div>
+                  <strong>Travail en équipe & Autonomie :</strong>
+                  <span>Suivi rigoureux des consignes, prise d’initiatives adaptées et sens de la responsabilité.</span>
+                </div>
+              </li>
+              <li>
+                <div class="bullet-icon"><i class="fa-solid fa-user-shield"></i></div>
+                <div>
+                  <strong>Adaptabilité & Sens du Service :</strong>
+                  <span>Accueil physique, orientation et accompagnement attentif du public.</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          </section>
+
+        </aside>
+
+        <!-- RIGHT COLUMN: DIPLOMAS & EXPERIENCE -->
+        <div class="cv-main-content">
+
+          <!-- PARCOURS & FORMATIONS -->
+          <section class="timeline-section">
+            <div class="section-title-skeuo">
+              <div class="title-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h2>PARCOURS & DIPLÔMES</h2>
+            </div>
+
+            <div class="timeline-container">
+
+              <!-- BTS Assurance -->
+              <div class="timeline-card active-card">
+                <div class="card-pin"></div>
+                <div class="card-year">2026 - EN COURS</div>
+                <div class="card-body">
+                  <h3>BTS Assurance</h3>
+                  <div class="card-subtitle"><i class="fa-solid fa-building-columns"></i> Formation Supérieure Tertiaire
+                    & Gestion des Risques</div>
+                  <p>Spécialisation en souscription, gestion des sinistres, analyse de contrats d'assurance, relation
+                    client et droit des assurances. Application directe du raisonnement mathématique et de la rigueur
+                    d'analyse.</p>
+                </div>
+              </div>
+
+              <!-- Baccalauréat Général -->
+              <div class="timeline-card">
+                <div class="card-pin"></div>
+                <div class="card-year">2026</div>
+                <div class="card-body">
+                  <h3>Baccalauréat Général — Mention Passable</h3>
+                  <div class="card-subtitle"><i class="fa-solid fa-school"></i> Lycée Polyvalent de Kawéni, Mayotte
+                  </div>
+                  <div class="specialties-badges">
+                    <span class="s-badge"><i class="fa-solid fa-square-root-variable"></i> Mathématiques</span>
+                    <span class="s-badge"><i class="fa-solid fa-atom"></i> Physique-Chimie</span>
+                    <span class="s-badge"><i class="fa-solid fa-globe"></i> HGGSP</span>
+                  </div>
+                  <div class="developed-skills-box">
+                    <strong>Compétences scientifiques & analytiques développées :</strong>
+                    <ul>
+                      <li>Raisonnement scientifique et résolution méthodique de problèmes complexes.</li>
+                      <li>Traitement et modélisation de données quantitatives.</li>
+                      <li>Culture générale approfondie, esprit critique, structuration du débat et argumentation
+                        orale/écrite.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- EXPÉRIENCE PROFESSIONNELLE -->
+          <section class="timeline-section">
+            <div class="section-title-skeuo">
+              <div class="title-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h2>EXPÉRIENCE PROFESSIONNELLE</h2>
+            </div>
+
+            <div class="timeline-container">
+              <div class="timeline-card experience-card">
+                <div class="card-pin"></div>
+                <div class="card-year">2023</div>
+                <div class="card-body">
+                  <h3>Stagiaire — École Maternelle</h3>
+                  <div class="card-subtitle"><i class="fa-solid fa-children"></i> Stage d'observation (3ème) — Mayotte
+                  </div>
+
+                  <ul class="exp-bullet-list">
+                    <li><i class="fa-solid fa-check"></i> Accueil, soutien et accompagnement quotidien des enfants de 3
+                      à 5 ans.</li>
+                    <li><i class="fa-solid fa-check"></i> Assistance directe à l’équipe pédagogique : préparation des
+                      supports d'apprentissage, animation des activités d'éveil.</li>
+                    <li><i class="fa-solid fa-check"></i> Développement concret de soft skills : patience, écoute
+                      attentive, sens des responsabilités, travail d’équipe et communication fluide avec les parents et
+                      les enseignants.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+      </div>
+
+      <!-- MATRICE DE CONNAISSANCES (HORIZONTAL FULL WIDTH) -->
+      <section class="interests-section" style="margin-top: 0.85rem;">
+        <div class="section-title-skeuo">
+          <div class="title-icon"><i class="fa-solid fa-brain"></i></div>
+          <h2>MATRICE DE CONNAISSANCES</h2>
+        </div>
+        <div class="horizontal-knowledge-tags">
+          <span class="k-tag"><i class="fa-solid fa-chart-line"></i> Statistiques & Probabilités</span>
+          <span class="k-tag"><i class="fa-solid fa-shield-halved"></i> Analyse des Risques (Assurance)</span>
+          <span class="k-tag"><i class="fa-solid fa-compass-drafting"></i> Modélisation & Cinématique</span>
+          <span class="k-tag"><i class="fa-solid fa-earth-africa"></i> Enjeux Géopolitiques (HGGSP)</span>
+          <span class="k-tag"><i class="fa-solid fa-book-bookmark"></i> Esprit Critique & Synthèse</span>
+          <span class="k-tag"><i class="fa-solid fa-hands-holding-child"></i> Pédagogie de Petite Enfance</span>
+        </div>
+      </section>
+
+      <!-- CENTRES D'INTÉRÊT & PASSIONS SCIENTIFIQUES (HORIZONTAL FULL WIDTH) -->
+      <section class="interests-section">
+        <div class="section-title-skeuo">
+          <div class="title-icon"><i class="fa-solid fa-orbit"></i></div>
+          <h2>CENTRES D'INTÉRÊT & CURIOSITÉ</h2>
+        </div>
+
+        <div class="interests-grid">
+
+          <div class="interest-card skeuo-box">
+            <div class="interest-icon"><i class="fa-solid fa-meteor"></i></div>
+            <h4>Sciences & Espace</h4>
+            <p>Passion pour la physique fondamentale, la mécanique céleste et la vulgarisation astronomique.</p>
+          </div>
+
+          <div class="interest-card skeuo-box">
+            <div class="interest-icon"><i class="fa-solid fa-landmark"></i></div>
+            <h4>Géopolitique</h4>
+            <p>Intérêt prononcé pour la compréhension des enjeux contemporains, l'histoire globale et les relations
+              internationales.</p>
+          </div>
+
+          <div class="interest-card skeuo-box">
+            <div class="interest-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+            <h4>Lecture & Rédaction</h4>
+            <p>Dévoreuse d'ouvrages scientifiques et littéraires. Perfectionnement continu des capacités
+              d’expression.</p>
+          </div>
+
+          <div class="interest-card skeuo-box">
+            <div class="interest-icon"><i class="fa-solid fa-hands-holding-heart"></i></div>
+            <h4>Engagement Associatif</h4>
+            <p>Implication sociale et esprit de solidarité collective au service de la communauté localement.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FOOTER STAMP & EQUATIONS DECOR -->
+      <footer class="cv-footer">
+        <div class="footer-equation">
+          &nabla; &middot; E = &rho; / &epsilon;₀ &nbsp;&bull;&nbsp; Rigueur + Pédagogie = Excellence Professionnelle
+        </div>
+        <div class="footer-signature">
+          <span>Dossier Candidature • MAHAMOUDOU Houldia</span>
+        </div>
+      </footer>
+
+    </article>
+  </main>
+
+  <!-- Complete Embedded JavaScript Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      initSpacePhysicsCanvas();
+      initGridToggle();
+    });
+
+    /* --- Space Physics & Constellation Canvas --- */
+    function initSpacePhysicsCanvas() {
+      const canvas = document.getElementById('space-canvas');
+      if (!canvas) return;
+
+      const ctx = canvas.getContext('2d');
+      let width = (canvas.width = window.innerWidth);
+      let height = (canvas.height = window.innerHeight);
+
+      window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      });
+
+      const particleCount = Math.floor((width * height) / 14000);
+      const particles = [];
+      const mouse = { x: null, y: null, radius: 150 };
+
+      window.addEventListener('mousemove', (e) => {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+      });
+
+      window.addEventListener('mouseleave', () => {
+        mouse.x = null;
+        mouse.y = null;
+      });
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * width;
+          this.y = Math.random() * height;
+          this.vx = (Math.random() - 0.5) * 0.6;
+          this.vy = (Math.random() - 0.5) * 0.6;
+          this.size = Math.random() * 2 + 0.8;
+          this.color = Math.random() > 0.3 ? '#38bdf8' : (Math.random() > 0.5 ? '#7c3aed' : '#fbbf24');
+          this.alpha = Math.random() * 0.7 + 0.3;
+        }
+
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+
+          if (this.x < 0) this.x = width;
+          if (this.x > width) this.x = 0;
+          if (this.y < 0) this.y = height;
+          if (this.y > height) this.y = 0;
+
+          if (mouse.x && mouse.y) {
+            const dx = mouse.x - this.x;
+            const dy = mouse.y - this.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < mouse.radius) {
+              const force = (mouse.radius - dist) / mouse.radius;
+              this.x -= (dx / dist) * force * 1.5;
+              this.y -= (dy / dist) * force * 1.5;
+            }
+          }
+        }
+
+        draw() {
+          ctx.save();
+          ctx.globalAlpha = this.alpha;
+          ctx.fillStyle = this.color;
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.restore();
+        }
+      }
+
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let a = 0; a < particles.length; a++) {
+          for (let b = a + 1; b < particles.length; b++) {
+            const dx = particles[a].x - particles[b].x;
+            const dy = particles[a].y - particles[b].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < 110) {
+              const alpha = (1 - dist / 110) * 0.25;
+              ctx.save();
+              ctx.strokeStyle = `rgba(56, 189, 248, ${alpha})`;
+              ctx.lineWidth = 0.6;
+              ctx.beginPath();
+              ctx.moveTo(particles[a].x, particles[a].y);
+              ctx.lineTo(particles[b].x, particles[b].y);
+              ctx.stroke();
+              ctx.restore();
+            }
+          }
+        }
+
+        particles.forEach((p) => {
+          p.update();
+          p.draw();
+        });
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    }
+
+    /* --- Interactive Grid Paper Toggle --- */
+    function initGridToggle() {
+      const toggleBtn = document.getElementById('toggle-grid-btn');
+      const gridTexture = document.querySelector('.paper-grid-texture');
+
+      if (toggleBtn && gridTexture) {
+        let active = true;
+        toggleBtn.addEventListener('click', () => {
+          active = !active;
+          gridTexture.style.opacity = active ? '0.85' : '0.1';
+          toggleBtn.classList.toggle('active', !active);
+        });
+      }
+    }
+
+  </script>
+</body>
+
+</html>
